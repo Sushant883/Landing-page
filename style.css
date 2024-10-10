@@ -1,12 +1,15 @@
-.container-item{
+.container-item {
     border: 2px solid red;
     margin-top: 20px;
     height: 300px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
-#Home{
+
+/* the code forHOME ---------------------------------------------------------------*/
+#Home {
+    transition: transform 0.3s ease;
     color: rgb(187, 186, 186);
     width: 200px;
     height: 150px;
@@ -19,18 +22,170 @@
     /* border: 2px solid blue; */
     border-radius: 50%;
     padding: 3px 3px;
-    background: linear-gradient(145deg, #f93a00 ,#0c0c0f);
-    box-shadow: 2px 5px 10px rgba(0,0,0,0.3),-2px -2px 5px rgba(255,255,255,0.3);
-    transform: translateY(-3px);  
+    background: linear-gradient(145deg, #645f5f, #000000);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
 }
-#Home:hover{
-    color: #C9C5C0 ;
+
+#Home:hover {
+    color: #C9C5C0;
     background: linear-gradient(145deg, #000000, #ff1717);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3),-2px -2px 5px rgba(255,255,255,0.3);
-    transform: translateY(-7px); 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-7px);
 }
-#Home:active{
-    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.5),
-    inset -3px -3px 8px rgba(255,255,255,0.2);
+
+#Home:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset -3px -3px 8px rgba(255, 255, 255, 0.2);
     transform: translateY(1px);
+}
+
+
+
+/* the code for About us ---------------------------------------------------------------*/
+#Aboutus {
+    transition: transform 0.3s ease;
+    /* border: 2px solid blue; */
+    color: rgb(187, 186, 186);
+    width: 200px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+
+    /* background color */
+    background: linear-gradient(145deg, #f93a00, #0c0c0f);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+#Aboutus:hover {
+    color: #C9C5C0;
+    background: linear-gradient(145deg, #000000, #ff1717);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-7px);
+}
+
+#Aboutus:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset -3px -3px 8px rgba(255, 255, 255, 0.2);
+    transform: translateY(1px);
+
+}
+
+
+/* the code for SERVICE ---------------------------------------------------------------*/
+
+#service {
+    transition: transform 0.3s ease;
+    /* border: 2px solid blue; */
+    color: rgb(187, 186, 186);
+    width: 200px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+
+    /* background color */
+    background: linear-gradient(145deg, #f93a00, #0c0c0f);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+
+}
+
+#service:hover {
+    color: #C9C5C0;
+    background: linear-gradient(145deg, #000000, #ff1717);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-7px);
+}
+
+#service:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset -3px -3px 8px rgba(255, 255, 255, 0.2);
+    transform: translateY(1px);
+
+}
+
+/* the code for blog's ---------------------------------------------------------------*/
+
+#blogs {
+    transition: transform 0.3s ease;
+    /* border: 2px solid blue; */
+    color: rgb(187, 186, 186);
+    width: 200px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+
+    /* background color */
+    background: linear-gradient(145deg, #f93a00, #0c0c0f);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+#blogs:hover {
+    color: #C9C5C0;
+    background: linear-gradient(145deg, #000000, #ff1717);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-7px);
+}
+
+#blogs:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset -3px -3px 8px rgba(255, 255, 255, 0.2);
+    transform: translateY(1px);
+
+}
+
+/* the code for Products ---------------------------------------------------------------*/
+
+#Products {
+    transition: tranform 0.3s ease;
+    color: rgb(187, 186, 186);
+    width: 200px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+
+    /* background color */
+    background: linear-gradient(145deg, #f93a00, #0c0c0f);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+#Products:hover {
+    color: #C9C5C0;
+    background: linear-gradient(145deg, #000000, #ff1717);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-7px);
+}
+
+#Products:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset -3px -3px 8px rgba(255, 255, 255, 0.2);
+    transform: translateY(1px);
+
 }
