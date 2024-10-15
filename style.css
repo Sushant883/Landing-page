@@ -7,11 +7,10 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
-
     background-image: url(images/full\ and\ final\ img.webp);
-    width: 100vw;
-    height: auto;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     background-repeat: no-repeat;
 }
@@ -20,7 +19,7 @@ body {
     /* background-color: #00000017; */
     /* backdrop-filter: blur(8px); */
     /* background-color: #000000; */
-   
+
     /* border: 2px solid red; */
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -102,8 +101,8 @@ body {
     gap: 5px 2px;
 }
 
-.searchbar{
-    
+.searchbar {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +136,7 @@ body {
 
 }
 
-.search-icon{
+.search-icon {
     color: aquamarine;
     font-size: 18px;
 }
@@ -152,17 +151,19 @@ button {
     cursor: pointer;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #000000;
+    color: #ffffff;
     background: transparent;
     box-shadow: 0 5px 10px;
 }
-button:hover{
+
+button:hover {
     color: #000000;
     background: linear-gradient(145deg, #b8b8b8, #fcebeb);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
     transform: translateY(-7px);
 }
-button:active{
+
+button:active {
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
         inset -3px -3px 8px rgba(255, 255, 255, 0.2);
     transform: translateY(1px);
@@ -172,30 +173,34 @@ button:active{
 
 /* hero section css--------------------------------- */
 
-.hero{
+.hero {
     /* border: 2px solid rebeccapurple; */
-    background-color: #000000a6;
+    /* background-color: #000000a6; */
+    /* backdrop-filter: blur(5px); */
     border-radius: 25px;
-    margin: 100px 100px;
+    margin-top: 300px;
+    margin-right: 100px;
     display: flex;
     padding: 20px 25px;
 
 }
 
-.intro{
+.intro {
     /* border: 2px solid red; */
     background-color: rgba(255, 255, 255, 0.329);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     border-radius: 20px;
     margin-right: 30px;
     padding: 10px 20px;
 }
-.intro h1{
+
+.intro h1 {
     /* border: 1px solid brown; */
     /* text-align: center; */
     font-size: 50px;
 }
-#Name{
+
+#Name {
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 0 10px 10px rgba(221, 217, 217, 0.937);
@@ -205,13 +210,13 @@ button:active{
     font-size: 40px;
 }
 
-.intro p{
+.intro p {
     margin-top: 10px;
     font-size: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.myimg img{
+.myimg img {
     /* border: 2px solid blue; */
     background-color: rgba(255, 255, 255, 0.329);
     backdrop-filter: blur(10px);
@@ -220,9 +225,66 @@ button:active{
     padding: 10px;
     border-radius: 10px;
 }
-.herimg{
+
+.herimg {
     border-radius: 10px;
 }
 
 /* complete the hero section--------------------------------- */
 
+
+
+/* create the main section------------------------------------ */
+.main-section {
+    padding-top: 25px;
+    text-align: center;
+    margin-top: 250px;
+    border: 2px solid red;
+    height: 1000px;
+}
+
+.website-section {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid blue;
+    width: auto;
+
+}
+
+.foodsite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.foodsite img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+}
+
+.foodsite h3 a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid brown;
+    font-size: 30px;
+    padding: 12px;
+    background-color: rgb(253, 42, 98);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.foodsite h3 {
+    width: 200px;
+}
