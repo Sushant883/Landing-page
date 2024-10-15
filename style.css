@@ -5,36 +5,50 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 
-    /* background-image: url(https://up.yimg.com/ib/th?id=OIP.WaQU5Ulwyif4M239aaY1vwHaEK&pid=Api&rs=1&c=1&qlt=95&w=201&h=113); */
+    background-image: url(images/full\ and\ final\ img.webp);
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 
-.nav-container{
+.nav-container {
     /* background-color: #00000017; */
     /* backdrop-filter: blur(8px); */
     /* background-color: #000000; */
-    border: 2px solid red;
+   
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    /* padding: 10px; */
     margin-top: 20px;
-    /* height: 40vh; */
-     display: flex; 
+    height: 10vh;
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding-top: 10px; */ 
+    /* align-items: ; */
+    /* padding-top: 10px; */
 }
 
-.logo img{
+.logo img {
     height: 50px;
     width: 50px;
     border-radius: 5px;
-    box-shadow: 0px 4px 8px ;
+    box-shadow: 0px 4px 8px;
     cursor: pointer;
-    
+
 
 }
 
-.li-item{
+.li-item {
+    /* z-index: -1; */
     display: flex;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
     list-style-type: none;
 
@@ -42,24 +56,115 @@ body {
 
 /* the code for HOME ---------------------------------------------------------------*/
 .li-item li a {
+    margin-top: 5px;
     transition: transform 0.3s ease;
     color: rgb(0, 0, 0);
-    width: 150px;
-    height: 80px;
+    /* width: 100px;
+    height: 50px; */
     text-decoration: none;
-    font-size: 25px;
+    font-size: 17px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bolder;
     cursor: pointer;
     /* border: 2px solid blue; */
     border-radius: 10%;
-    padding: 3px 3px;
+    padding: 5px 10px;
     /* background: linear-gradient(145deg, #645f5f, #000000); */
     /* box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3); */
     transform: translateY(-3px);
     z-index: 0;
+}
+
+.li-item li a:hover {
+    color: #000000;
+    background: linear-gradient(145deg, #b8b8b8, #fcebeb);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-7px);
+}
+
+.li-item li a:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset -3px -3px 8px rgba(255, 255, 255, 0.2);
+    transform: translateY(1px);
+}
+
+.search-box1 {
+    /* border: 1px solid red; */
+    height: 10vh;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    gap: 5px 2px;
+}
+
+.searchbar{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#Search-box {
+    border: none;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    border: 2px solid rgb(149, 149, 155);
+    padding: 10px 20px;
+    border-radius: 30px;
+    align-items: center;
+    /* box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3); */
+
+}
+
+#Search-box:hover input {
+    width: 400px;
+}
+
+#Search-box input {
+    width: 0px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+
+}
+
+.search-icon{
+    color: aquamarine;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    margin: 0px 5px;
+    transition: transform 0.3s;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    background: transparent;
+    box-shadow: 0 5px 10px;
+}
+button:hover{
+    color: #000000;
+    background: linear-gradient(145deg, #b8b8b8, #fcebeb);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
+    transform: translateY(-7px);
+}
+button:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset -3px -3px 8px rgba(255, 255, 255, 0.2);
+    transform: translateY(1px);
 }
 
 /* #Home::after {
@@ -105,30 +210,5 @@ body {
     }
 
 } */
-.li-item li a:hover {
-    color: #000000;
-    background: linear-gradient(145deg, #b8b8b8, #fcebeb);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
-    transform: translateY(-7px);
-}
-
-.li-item li a:active {
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-        inset -3px -3px 8px rgba(255, 255, 255, 0.2);
-    transform: translateY(1px);
-}
-
-.searchbar{
-    border: 1px solid red;
-    height: 60px;
-    width: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 5px;
-    gap: 5px 2px;
-}
-
 
 
