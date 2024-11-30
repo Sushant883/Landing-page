@@ -34,6 +34,24 @@ body {
 
 }
 
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 5px; /* Adjust height as needed */
+    background: #000000; /* Light background color */
+    z-index: 1000; /* Ensure it stays above all content */
+  }
+
+  /* Actual progress bar */
+  .progress-bar {
+    width: 0%; /* Start with 0% width */
+    height: 100%; /* Full height of the container */
+    background: #a04caf; /* Green color (adjust as desired) */
+    transition: width 0.2s ease; /* Smooth progress animation */
+  }
+
 .nav-container {
     /* background-color: #00000017; */
     /* backdrop-filter: blur(8px); */
@@ -291,7 +309,7 @@ button:active {
 
 .card-container {
     background-image: url(images/projects\ bg\ img.jpeg);
-    
+    background-size: cover;
     margin-top: 50px;
     display: flex;
     align-items: center;
