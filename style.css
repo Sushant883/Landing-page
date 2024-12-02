@@ -22,7 +22,7 @@ body {
     padding: 0;
     /* background: linear-gradient(135deg, #a7a7a7, #000000); */
     /* background: linear-gradient(135deg, #000000, #FFD700); */
-    
+
     /* background-color:  #E1E0D7; */
     /* background-image: url(images/full\ and\ final\ img.webp); */
     background-size: contain;
@@ -32,7 +32,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.upperbody{
+.upperbody {
     /* background: radial-gradient(circle, rgba(3, 3, 3, 0.907), rgba(0, 0, 0, 0.512));  */
     /* border: 3px solid blue; */
 
@@ -42,19 +42,27 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Full width */
-    height: 5px; /* Adjust height as needed */
-    background: #000000; /* Light background color */
-    z-index: 1000; /* Ensure it stays above all content */
-  }
+    width: 100%;
+    /* Full width */
+    height: 5px;
+    /* Adjust height as needed */
+    background: #000000;
+    /* Light background color */
+    z-index: 1000;
+    /* Ensure it stays above all content */
+}
 
-  /* Actual progress bar */
-  .progress-bar {
-    width: 0%; /* Start with 0% width */
-    height: 100%; /* Full height of the container */
-    background: #a04caf; /* Green color (adjust as desired) */
-    transition: width 0.2s ease; /* Smooth progress animation */
-  }
+/* Actual progress bar */
+.progress-bar {
+    width: 0%;
+    /* Start with 0% width */
+    height: 100%;
+    /* Full height of the container */
+    background: #a04caf;
+    /* Green color (adjust as desired) */
+    transition: width 0.2s ease;
+    /* Smooth progress animation */
+}
 
 .nav-container {
     /* background-color: #00000017; */
@@ -72,7 +80,7 @@ body {
     display: flex;
     flex: 1;
     /* flex-direction: column; */
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     /* align-items: ; */
     /* padding-top: 10px; */
@@ -101,7 +109,7 @@ body {
 .li-item li a {
     margin-top: 5px;
     transition: transform 0.3s ease;
-    color:#FFFFFF;
+    color: #FFFFFF;
     /* width: 100px;
     height: 50px; */
     text-decoration: none;
@@ -182,7 +190,8 @@ body {
 
 }
 
-.fa-solid, .fas {
+.fa-solid,
+.fas {
     font-weight: 900;
     margin: 0px 10px;
     font-size: 20px;
@@ -190,7 +199,8 @@ body {
     cursor: pointer;
 }
 
-.fa-solid, .fas:hover{
+.fa-solid,
+.fas:hover {
     /* transform: translateY(-7px); */
 }
 
@@ -251,6 +261,7 @@ button:active {
     margin-right: 30px;
     padding: 10px 20px;
     color: rgb(255, 255, 255);
+    /* font-weight: bolder; */
 }
 
 .intro h1 {
@@ -287,7 +298,7 @@ button:active {
     border-radius: 10px;
 }
 
-#element{
+#element {
     font-size: 30px;
 }
 
@@ -310,38 +321,75 @@ button:active {
     /* background-color: #f0f0f0; */
 }
 
-.main-section h1{
+.main-section h1 {
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 
 .card-container {
-    background-image: url(images/projects\ bg\ img.jpeg);
+    border-radius: 10px;
+    border: 2px solid blue;
+    /* background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 28%, rgba(79, 79, 79, 1) 88%, rgba(163, 153, 153, 1) 92%, rgba(79, 79, 79, 1) 100%, rgba(79, 79, 79, 1) 100%); */
     background-size: cover;
     margin-top: 50px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+
     /* align-items: center; */
-    border: 2px solid blue;
+
 }
 
-.Projects{
-    border: 2px solid red;
+
+
+
+
+.box {
+    /* border: 2px solid red; */
     width: 325px;
     background-color: #f0f0f0;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.636);
     margin: 20px;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateX(-500%);
+    /* Slide out of view */
+    transition: transform 1s ease-in-out, opacity 0.7s ease;
+    /* Smooth transitions */
 }
-.Projects a{
+
+.box.in-view {
+    opacity: 1;
+    /* Make visible */
+    transform: translateX(0);
+    /* Slide into view */
+}
+
+.box.out-of-view {
+    opacity: 0;
+    transform: translateX(-200%);
+    /* Slide out to the left */
+}
+
+.box:hover {
+    transition: transform 0.7s ease;
+    transform: scale(1.1);
+
+}
+
+
+
+.Projects a {
     text-decoration: none;
     list-style-type: none;
 }
-.prj-img{
+
+.prj-img {
     flex: 1;
     padding: 5px 5px;
     border-radius: 20px;
@@ -350,28 +398,30 @@ button:active {
     height: auto;
     cursor: pointer;
 }
-.card-content{
+
+.card-content {
     padding: 16px;
     font-size: 20px;
 }
-.card-content h3 a{
+
+.card-content h3 a {
     color: black;
     text-decoration: none;
     list-style-type: none;
 }
 
 /* .foodsite { */
-    /* display: flex;
+/* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border: 1px solid red; */
-    /* margin-top: 10px;
+/* margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 0px; }*/
 
 /* .foodsite img { */
-    /* width: 200px;
+/* width: 200px;
     height: 200px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;} */
@@ -379,7 +429,7 @@ button:active {
 
 
 /* .foodsite h3 a { */
-    /* text-decoration: none;
+/* text-decoration: none;
     color: black;
     border: 1px solid brown;
     font-size: 30px;
@@ -387,3 +437,10 @@ button:active {
     background-color: rgb(253, 42, 98);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;} */
+
+
+.article-section {
+    margin: 400px;
+    border: 2px solid red;
+
+}
