@@ -332,26 +332,22 @@ button:active {
     border: 2px solid blue;
     /* background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 28%, rgba(79, 79, 79, 1) 88%, rgba(163, 153, 153, 1) 92%, rgba(79, 79, 79, 1) 100%, rgba(79, 79, 79, 1) 100%); */
-    background-size: cover;
-    margin-top: 50px;
+    /* background-size: cover; */
+    margin-top: 40px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-
     /* align-items: center; */
 
 }
 
 
-
-
-
 .box {
     /* border: 2px solid red; */
     width: 325px;
-    background-color: #f0f0f0;
-    border-radius: 8px;
+    background-color: #bcb6b667;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 5px 10px 4px rgba(0, 0, 0, 0.636);
     margin: 20px;
@@ -400,8 +396,11 @@ button:active {
 }
 
 .card-content {
-    padding: 16px;
-    font-size: 20px;
+    /* border: 2px solid red; */
+    background-color: #fa6800;
+    padding: 10px;
+    margin-top: 0;
+    font-size: 30px;
 }
 
 .card-content h3 a {
@@ -440,7 +439,19 @@ button:active {
 
 
 .article-section {
-    margin: 400px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* width: 500px; */
+    padding: 20px;
+    text-align: center;
     border: 2px solid red;
 
+}
+
+.article-section h2 {
+    width: 600px;
+    text-align: center;
 }
