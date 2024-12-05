@@ -130,10 +130,11 @@ body {
 }
 
 .li-item li a:hover {
-    color: #000000;
-    background: linear-gradient(145deg, #b8b8b8, #fcebeb);
+    color: #ffffff;
+    /* background: linear-gradient(145deg, #b8b8b8, #fcebeb); */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
-    transform: translateY(-7px);
+    transform: translateY(-10px);
+    scale: 1.1;
 }
 
 .li-item li a:active {
@@ -509,3 +510,43 @@ button:active {
     color: #fa6800;
     
 }
+
+
+.Resume{
+    border: 2px solid red;
+    margin: 100px;
+    padding: 150px;
+}
+
+/* .download-resume{
+    cursor: pointer;
+    border: 2px solid blue;
+    width: fit-content;
+    padding: 20px 30px;
+    background-color: #ff6a00;
+} */
+
+.resume-button{
+    background-color: #ff6a00;
+    border: 2px solid blue;
+    padding: 20px 30px;
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 3vh;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.8s ease;
+}
+
+.resume-button:hover{
+    color:black;
+    background-color: #FFFFFF;
+}
+
+/* .download-resume:hover{
+    color: black;
+    background-color: #FFFFFF;
+    /* background-color: white; */
+} */
