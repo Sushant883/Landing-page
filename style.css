@@ -512,9 +512,10 @@ button:active {
 
 
 .Resume{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 100px;
     padding: 150px;
+    text-align: center;
 }
 
 /* .download-resume{
@@ -529,7 +530,7 @@ button:active {
     background-color: #091A2f;
     border: 1px solid rgb(0, 208, 255);
     padding: 20px 30px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
     font-weight: bold;
     list-style-type: none;
@@ -554,3 +555,11 @@ button:active {
     background-color: #FFFFFF;
     /* background-color: white; */
 /* } */ 
+
+.form-section{
+    border: 2px solid rgb(1, 1, 1);
+    margin: 150px;
+    color: white;
+    display: flex;
+    padding: 100px;
+}
