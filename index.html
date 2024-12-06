@@ -57,8 +57,8 @@
                 </div>
 
                 <br>
-                <button>SighUp</button>
-                <button>SighIn</button>
+                <button class="nav-button">SighUp</button>
+                <button class="nav-button">SighIn</button>
             </div>
         </nav>
 
@@ -144,31 +144,51 @@
             <i class="fa-brands fa-node-js"></i>
             <i class="fa-brands fa-github"></i>
             <i class="fa-brands fa-linux"></i>
+
         </div>
     </div>
 
 
 
-    <section class="Resume">
+    <section class="Resume-form">
         <div class="download-resume">
-            <a href="resume/Sushant 2024.pdf" download="Sushant 2024.pdf" class="resume-button">Download Resume</a>
+            <a href="resume/Sushant 2024.pdf" download="Sushant 2024.pdf" class="resume-button">Download Resume <i
+                    class="fa-solid fa-down-long"></i></a>
         </div>
-
     </section>
+    <hr>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr> <br>
 
-
-    <section class="form-section">
-        <form action="" class="form">
-            <label for="text">Name</label>
-            <input type="text">
-            <label for="text">Email</label>
-            <input type="text">
-            <label for="number">Mobile no.</label>
-            <input type="number">
-
-
+                <div class="contact-left">
+                    <input type="hidden" name="access_key" value="b1976518-2bbb-41c6-993c-87439f86329a">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+                    <input type="text" name="email" placeholder="Your Email" class="contact-input" required>
+                    <textarea name="message" id="" placeholder="Your Message" class="contact-input"></textarea>
+                    <button class="submit-button" type="submit">Submit <i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
         </form>
-    </section>
+
+
+
+
+        <div class="contact-right">
+            <img src="images/right_img.png" alt="">
+        </div>
+    </div>
+
+
+
+    <footer class="footer-container">
+
+
+    </footer>
+
+
 
 
 
@@ -181,7 +201,6 @@
             strings: ['Full Stack Developer', 'Work with 0101 1010', 'Code is Life'],
             typeSpeed: 50,
         });</script>
-
 
 </body>
 
