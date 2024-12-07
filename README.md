@@ -1,2 +1,2 @@
-# Landing-page
-We are creating the Landing Page project 
+# Portfolio
+This is my portfolio 
