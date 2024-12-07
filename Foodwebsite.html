@@ -6,6 +6,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Foos Website</title>
+    <style>
+        /* *{
+    padding: 0;
+    margin: 0;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&family=Yuji+Mai&display=swap');
+
+
+
+.dish-img{
+    height: 60px;;
+    width: 60px;
+}
+.navbar {
+    /* background-image: url(images/back\ img\ nav.jpg); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* border: 2px solid rgb(0, 0, 0); */
+    /* border-radius: 15px; */
+    border-bottom: 2px solid orangered;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #dfdfdf; */
+}
+
+.ul-items {
+    width: 1000px;
+    /* border: 3px solid rgb(160, 160, 160); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+
+
+.button-1 {
+    margin-left: auto;
+    width: 300px;
+    display: flex;
+    /* border: 2px solid rgb(0, 0, 0); */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-In {
+    border: none;
+    margin: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000000;
+    /* background-color: #38598b; */
+    cursor: pointer;
+    /* transition: background-color 0.3s easy; */
+    /* box-shadow: #030303; */
+}
+
+.button-In:hover {
+    /* background-color: #ded5c4;
+    color: #000000;
+    box-shadow: 0 8px 16px rgba(19, 10, 10, 0.3);  */
+    color: rgb(255, 81, 0);
+    border-bottom: 2px solid rgb(255, 81, 0);
+}
+
+.nav-li-items {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    /* border: 1px solid rgb(0, 0, 0); */
+    /* background-color: #f2f4fb7b;  */
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    /* border-radius: 10px; */
+}
+
+.nav-li-items:hover {
+    /* background-color: #626164; */
+    transition: translate(100px, 50px);
+    color: rgb(255, 81, 0);
+    border-bottom: 2px solid rgb(255, 81, 0);
+    /* box-shadow: 0 8px 16px rgba(19, 10, 10, 0.3);  */
+
+}
+
+
+.nav-content {
+    /* border: 2px solid red; */
+    background-image: url(images/savour\ taste\ backimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 50px 0px;
+    /* margin-left: 0px;
+    margin-right: 0px; */
+    text-align: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-content h1 {
+    /* border: 2px solid red; */
+    font-size: 7vh;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    font-family: "Yuji Mai", serif;
+    font-weight: bold;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Yuji+Mai&display=swap');
+
+.nav-content p {
+    /* border: 1px solid blueviolet; */
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    /* align-items: center;
+    justify-content: center; */
+    width: 60%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Hachi+Maru+Pop&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&family=Yuji+Mai&display=swap');
+
+#element{
+    /* border: 1px solid blueviolet; */
+    font-family: "Hachi Maru Pop", cursive;
+    font-size: 30px;
+    padding: 20px;
+    /* align-items: center;
+    justify-content: center; */
+    width: 70%;
+}
+
+
+.button {
+    text-decoration: none;
+    /* display: inline-block; */
+    /* margin-bottom: 25px; */
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    text-shadow: 2cap;
+    /* background-color: #ffffff; */
+    font-size: 25px;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    /* margin: 5px; */
+    /* padding: 15px; */
+    color: rgb(8, 2, 2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+    /* background-color: #a2a8d3; */
+    color: black;
+    border: 1px solid #e7eaf6;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    transform: translateY(-10px);
+}
+
+.imagebutton{
+    /* margin-bottom: 10px; */
+
+}
+
+.Porject-container {
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 700px; */
+    list-style-type: none;
+    /* border: 2px solid red; */
+    /* height: 400px; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Project-card{
+    /* border: 2px solid blue; */
+    border-radius: 25px;
+    /* background-color: rgba(242, 242, 242, 0.548); */
+    display: flex;
+    margin: 15px;
+    /* padding: 15px; */
+    /* flex: 1; */
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 500px;
+    width: 450px;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+    /* transition: trasnform 0.8s ease; */
+}
+.Project-card:hover{
+    /* transition: trasnform 2s ease; */
+    /* transform: translateY(-10px); */
+    /* scale: 1.1; */
+   
+}
+
+
+.Project-img{
+    border-radius: 25px;
+    /* background-color: #da7b00ba; */
+    /* padding-top: 10px; */
+    /* padding-left: 20px; */
+    height: 300px;
+    width: 450px;
+    box-shadow: 1px 3px 10px;
+}
+
+.image-description{
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Hachi Maru Pop", cursive;
+}
+/* .inner-img {
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;
+    /* border: 3px solid pink; 
+}
+
+.inner-div {
+    /* border: 3px solid blue; */
+    /* display: flex;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    /* margin: 5px;
+    box-shadow: 5px 5px 10px;
+    background: radial-gradient(circle, rgba(217, 217, 217, 0.97), rgba(0, 0, 0, 0.9)); */
+
+    </style>
 </head>
 
 
