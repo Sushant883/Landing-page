@@ -646,17 +646,7 @@ hr {
     scale: 1.1;
 }
 
-@media (max-width:480px) {
-    body {
-        background-color: #091A2f;
-    }
 
-    .nav-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-}
 
 
 /* // footer */
@@ -727,3 +717,6 @@ hr {
     margin-top: 10px;
 
 }
+
+
+
