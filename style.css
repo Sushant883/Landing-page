@@ -389,6 +389,12 @@ body {
     cursor: pointer;
 }
 
+.card-container{
+    padding: 30px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+}
 .card-content {
     /* border: 2px solid red; */
     background-color: #fa6800;
