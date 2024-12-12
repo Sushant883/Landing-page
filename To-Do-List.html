@@ -175,6 +175,18 @@ function addTask() {
     inputBox.value = "";// clear the input box after add the list item in the LI.
     saveData()// save the data when refres the page.
 }
+
+
+listContainer.addEventListener("click", function(e) {
+    if (e.target.tagName === "LI") {
+        e.target.classList.toggle("checked");
+        saveData()
+    }
+    else if (e.target.tagName === "SPAN"){
+        e.target.parentElement.remove();
+        saveData()
+    }
+}, false);
      </script>
 </body>
 
