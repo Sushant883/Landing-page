@@ -142,7 +142,7 @@ body {
 }
 
 .search-box1 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 10vh;
     width: 700px;
     display: flex;
@@ -282,7 +282,7 @@ body {
     border-bottom: 1px solid black;
     /* border: 1px solid white; */
     /* text-align: center; */
-    font-size: 60px;
+    font-size: 30px;
 }
 
 .intro p {

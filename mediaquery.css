@@ -1,0 +1,73 @@
+@media screen and (max-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .nav-container {
+        display: none;
+
+    }
+
+    #nav-logo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body {
+        /* overflow: hidden; */
+        background-image: none;
+    }
+
+    .hero {
+
+        /* gap: 20px; */
+        border: 2px solid red;
+        /* margin-top: 50px; */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+
+    .intro {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 300px;
+        font-size: 15px;
+        /* overflow: hidden; */
+    }
+
+    #inner-parahtml{
+        font-size: 10px;
+    }
+
+    .intro p {
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: "Inconsolata", monospace;
+        width: 300px;
+    }
+
+    .himimg {
+        background: none;
+        height: 150px;
+        width: 150px;
+    }
+
+    .upperbody {
+        border: 2px solid blue;
+        padding: 100px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+}
