@@ -114,6 +114,24 @@
     .card-container{
         border: 2px solid red;
         margin-top: 2vh;
+        height: auto;
+        margin-bottom: 0vh;
+    }
+
+    .box{
+        width: 40%;
+        /* border: 2px solid blue; */
+        margin: 10px;
+        height: fit-content;
+    }
+
+    .box a img{
+        padding: 0;
+        border-radius: 2px;
+    }
+
+    .card-content h3 a{
+        font-size: 0.7em;
     }
 
 
