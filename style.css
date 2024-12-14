@@ -314,17 +314,12 @@ body {
     font-family: monospace;
     text-align: center;
     color: white;
-    border-radius: 10px;
-    /* border: 2px solid blue; */
-    /* background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 28%, rgba(79, 79, 79, 1) 88%, rgba(163, 153, 153, 1) 92%, rgba(79, 79, 79, 1) 100%, rgba(79, 79, 79, 1) 100%); */
-    /* background-size: cover; */
+    /* border-radius: 10px; */
     margin-top: 40px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
 
 }
 

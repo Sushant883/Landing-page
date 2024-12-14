@@ -99,13 +99,21 @@
     }
 
     .main-section{
-        border: 2px solid red;
+        /* border: 2px solid red; */
         margin-top: 8vh;
     }
     .main-section h1{
         font-size: 3em;
+        margin-left: 2vw;
+        margin-top: 2vh;
+        border-radius: 0;
         border-bottom: 2px solid royalblue;
         width: fit-content;
+    }
+
+    .card-container{
+        border: 2px solid red;
+        margin-top: 2vh;
     }
 
 
