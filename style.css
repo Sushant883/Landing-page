@@ -95,10 +95,13 @@ body {
 
 .li-item {
     /* z-index: -1; */
+    /* border: 2px solid red; */
     display: flex;
-    gap: 10px;
+    /* gap: 10px; */
+    align-items: center;
     justify-content: center;
     list-style-type: none;
+    height: 10vh;
 
 }
 #search-icon{
@@ -107,32 +110,35 @@ body {
 
 /* the code for HOME ---------------------------------------------------------------*/
 .li-item li a {
-    margin-top: 5px;
-    transition: transform 0.3s ease;
+    /* margin-top: 5px; */
+    /* transition: transform 0.3s ease; */
     color: #FFFFFF;
-    /* width: 100px;
-    height: 50px; */
+    /* width: 100px;*/
+    height: 10vh; 
     text-decoration: none;
     font-family: "Inconsolata", monospace;
-    font-size: 17px;
+    font-size: 3vh;
     font-weight: bolder;
     display: flex;
+    align-items: center;
     /* justify-content: center;
     align-items: center;
-    cursor: pointer;
-    /* border: 2px solid blue; */
-    border-radius: 10%;
-    padding: 5px 10px;
-    transform: translateY(-3px);
-    z-index: 0;
+    cursor: pointer; */
+     /* border: 2px solid blue; */
+    /* border-radius: 10%; */
+    padding: 0 20px;
+    /* transform: translateY(-3px); */
+    /* z-index: 0; */
 }
 
 .li-item li a:hover {
     color: #ffffff;
+    border-bottom: 1px solid rgba(65, 105, 225, 0.19);
+    background-color: #01c9f11b;
     /* background: linear-gradient(145deg, #b8b8b8, #fcebeb); */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3);
-    transform: translateY(-10px);
-    scale: 1.1;
+    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.3); */
+    /* transform: translateY(-10px); */
+    /* scale: 1.1; */
 }
 
 .li-item li a:active {
@@ -240,17 +246,12 @@ body {
 /* hero section css--------------------------------- */
 
 .hero {
-    /* border: 2px solid rebeccapurple; */
-    /* background-color: #000000a6; */
-    /* backdrop-filter: blur(5px); */
-    /* background: radial-gradient(circle, rgba(0, 255, 255, 0.068), rgba(0, 0, 0, 0.9));  */
-    /* background: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%); */
+    border: 2px solid rebeccapurple;
     border-radius: 5px;
-    margin-top: 100px;
-    /* margin-right: 100px; */
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    height: calc(100vh - 10vh);
+    /* width: 100%; */
     justify-content: space-evenly;
     padding: 20px 25px;
 
@@ -258,10 +259,10 @@ body {
 
 .intro {
     /* border: 2px solid red; */
-    background-color: rgba(61, 58, 58, 0.334);
+    /* background-color: rgba(61, 58, 58, 0.334); */
     backdrop-filter: blur(5px);
     border-radius: 20px;
-    margin-right: 30px;
+    margin-right: 5vw;
     padding: 10px 20px;
     color: rgb(255, 255, 255);
     /* font-weight: bolder; */
@@ -276,13 +277,13 @@ body {
 
 #Name {
     font-weight: bolder;
-    color: #ff7716;
+    color: #ff4400;
     font-family:'Courier New', Courier, monospace;
-    text-shadow: 0 10px 10px rgba(30, 29, 28, 0.937);
+    text-shadow: 0 10px 10px rgba(0, 0, 0, 0.984);
     border-bottom: 1px solid black;
     /* border: 1px solid white; */
     /* text-align: center; */
-    font-size: 30px;
+    font-size: 10vh;
 }
 
 .intro p {

@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     * {
         margin: 0;
         padding: 0;
@@ -6,17 +6,14 @@
     }
 
     .nav-container {
-        display: none;
+        /* display: none; */
+        height: 10vh;
 
-    }
-
-    #nav-logo {
-        display: flex;
-        flex-wrap: wrap;
     }
 
     body {
         overflow-X: hidden;
+        /* width: 100vw; */
         background-image: none;
         display: flex;
         flex-direction: column;
@@ -25,10 +22,11 @@
     }
 
     .upperbody {
-
+        width: 100vw;
+        height: calc(100vh - 10vh);
         border: 2px solid blue;
-        padding: 10px;
-        text-align: center;
+        padding: 2vw;
+        /* text-align: center; */
         display: flex;
         /*align-items: center;
         justify-items: center; */
@@ -38,8 +36,8 @@
     .hero {
 
         /* gap: 20px; */
-        max-width: 100%;
-        width: 100vh;
+        /* max-width: 100%; */
+        width: 100vw;
         border: 2px solid red;
         /* margin-top: 50px; */
         display: flex;
@@ -76,7 +74,7 @@
         width: 300px;
         margin: 0;
         padding: 0;
-        width: 100%;
+        width: 100vw;
     }
 
     .myimg img {
