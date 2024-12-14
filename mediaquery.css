@@ -3,11 +3,12 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        overflow-X: hidden;
     }
 
     .nav-container {
         /* display: none; */
-        height: 10vh;
+        height: 15vh;
 
     }
 
@@ -50,7 +51,8 @@
     }
 
     .intro {
-        width: auto;
+        width: 70%;
+        border: 2px solid red;
         display: flex;
         align-items: center;
         justify-content: center;

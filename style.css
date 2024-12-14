@@ -83,7 +83,7 @@ body {
     /* padding-top: 10px; */
 }
 
-.logo img {
+.logo{
     height: 50px;
     width: 50px;
     border-radius: 5px;
@@ -150,13 +150,13 @@ body {
 .search-box1 {
     /* border: 1px solid red; */
     height: 10vh;
-    width: 700px;
+    width: 50vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 5px 5px;
-    gap: 5px 2px;
+    /* padding: 5px 5px; */
+    /* gap: 5px 2px; */
 }
 
 .searchbar {
@@ -168,35 +168,16 @@ body {
 
 #Search-box {
     border: none;
-    height: 35px;
+    width: 20vw;
+    height: 7vh;
     display: flex;
-    font-size: 14px;
-    cursor: pointer;
-    border: 2px solid rgb(149, 149, 155);
-    padding: 10px 20px;
-    border-radius: 30px;
-    align-items: center;
-    /* box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3); */
+    font-size: 1.5em;
+    padding: 0px 20px;
+    border-radius: 15px; 
 
 }
 
-#Search-box:hover input {
-    width: 400px;
-}
 
-#Search-box input {
-    width: 0px;
-    outline: none;
-    border: none;
-    font-weight: 500;
-    transition: 0.8s;
-    background: transparent;
-
-}
-
-.fa-solidfa-bars{
-
-}
 
 .fa-solid,
 .fas {
@@ -205,11 +186,6 @@ body {
     font-size: 20px;
     color: white;
     cursor: pointer;
-}
-
-.fa-solid,
-.fas:hover {
-    /* transform: translateY(-7px); */
 }
 
 
@@ -246,32 +222,29 @@ body {
 /* hero section css--------------------------------- */
 
 .hero {
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
     border-radius: 5px;
-    display: flex;
-    flex-wrap: wrap;
     height: calc(100vh - 10vh);
-    /* width: 100%; */
-    justify-content: space-evenly;
-    padding: 20px 25px;
+    display: flex;
+    width: 100vw;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: flex-end;
 
 }
 
-.intro {
+.intro{
+    padding-left: 8vw;
     /* border: 2px solid red; */
-    /* background-color: rgba(61, 58, 58, 0.334); */
-    backdrop-filter: blur(5px);
+    height: calc(100vh - 10vh);
+    width: 65%;
     border-radius: 20px;
-    margin-right: 5vw;
-    padding: 10px 20px;
     color: rgb(255, 255, 255);
-    /* font-weight: bolder; */
 }
 
 .intro h1 {
-    /* border: 1px solid brown; */
-    /* text-align: center; */
-    font-size: 50px;
+    font-size: 4em;
+    margin-top: 10vh;
 }
 
 
@@ -280,28 +253,34 @@ body {
     color: #ff4400;
     font-family:'Courier New', Courier, monospace;
     text-shadow: 0 10px 10px rgba(0, 0, 0, 0.984);
-    border-bottom: 1px solid black;
-    /* border: 1px solid white; */
-    /* text-align: center; */
-    font-size: 10vh;
+    border-bottom: 2px solid black;
+    font-size: 5em;
+    width: fit-content;
 }
 
 .intro p {
-    margin-top: 10px;
-    font-size: 25px;
+    margin-top: 10%;
+    font-size: 1.5em;
     font-family: "Inconsolata", monospace;
-    width: 700px;
+    width: 100%;
+}
+
+.myimg{
+    width: 35%;
+    /* border: 2px solid navajowhite; */
+    height: calc(100vh - 10vh);
+    /* text-align: center; */
 }
 
 .myimg img {
     /* border: 2px solid blue; */
-    background-color: rgba(250, 239, 239, 0.382);
-    backdrop-filter: blur(10px);
-    height: 400px;
-    width: 450px;
-    padding: 5px;
-    border-radius: 5px;
+    width: 50%;
+    border-radius: 10%;
+    height: 50%;
+    width: 70%;
     box-shadow: -5px 5px 10px;
+    margin-top: 15vh;
+    margin-left: 5vw;
 }
 
 #element {
