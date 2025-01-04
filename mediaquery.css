@@ -151,7 +151,7 @@
 
     .article-section h2{
         font-weight: 600;
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
         font-size: 1em;
 
     }
@@ -162,6 +162,61 @@
         width: 80%;
         height: auto;
     }
+
+    .languages-icon{
+        border: 2px solid blue;
+        text-align: center;
+        align-items: center;
+        /* display: flex; */
+        width: auto;
+    }
+
+    .CV-Languages{
+        border: 2px solid wheat;
+    }
+
+    .languages-icon i{
+        font-size: 40px;
+    }
+
+    .Resume-form{
+        border: 2px solid white;
+    }
+
+    .download-resume{
+        /* border: 2px solid yellow; */
+        width: 300px;   
+    }
+
+    .resume-button{
+        padding: 20px 30px;
+        /* border: 4px solid blue; */
+        font-size: 2.9vh;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        width: 250px;
+    }
+
+    .contact-container{
+        /* border: 2px solid red; */
+        /* display: flex;
+        align-items: center; */
+    }
+.contact-left-title h2{
+    font-size: 8vh;
+}
+.contact-left{
+    /* border: 2px solid red; */
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-right{
+display: none;
+}
 
 
 }
